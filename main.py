@@ -44,7 +44,8 @@ def result():
 
     if guess == user.secret_number:
         message = "Correct! The secret number is {0}".format(str(guess))
-        Player.edit(obj_id=Player.id, secret_number=Player.make_secret_number())
+        secret = randint(1, 30)
+        Player.edit(obj_id=user.id, secret_number=secret)
 
     elif guess > user.secret_number:
         message = "Your guess is not correct... try something smaller."
