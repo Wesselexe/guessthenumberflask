@@ -1,3 +1,4 @@
 Flask==1.0.2
 smartninja-nosql
 pymongo
+gunicorn==19.9.0
